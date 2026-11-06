@@ -1,0 +1,5041 @@
+[
+    {
+        "id": "dfb14b698d70febb",
+        "type": "tab",
+        "label": "ejercicio 1 Hola Mundo",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "t_ej1",
+        "type": "tab",
+        "label": "Clase 4 - Ejercicio 1",
+        "disabled": false,
+        "info": "Sensor simulado: random, temp, hum y alarmas con function."
+    },
+    {
+        "id": "t_ej2",
+        "type": "tab",
+        "label": "Clase 4 - Ejercicio 2",
+        "disabled": false,
+        "info": "Decimales con toFixed(2) y alarmas con switch + change."
+    },
+    {
+        "id": "t_ej3",
+        "type": "tab",
+        "label": "Clase 4 - Ejercicio 3",
+        "disabled": false,
+        "info": "JSON en el inject y extracción de variables con change."
+    },
+    {
+        "id": "rest1880tabserver01",
+        "type": "tab",
+        "label": "dahsboard 3-Servidor REST",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "flow_puente_mqtt",
+        "type": "tab",
+        "label": "Puente Mosquitto a HiveMQ",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1377b1a4bf471aa6",
+        "type": "tab",
+        "label": "orquestador 4 - Puente Mosquitto a HiveMQ ",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b9ae83c5d00795a4",
+        "type": "tab",
+        "label": "Flujo 5 - ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "air_sensor_26",
+        "type": "tab",
+        "label": "leccion Aire - Cliente Sensor",
+        "disabled": false,
+        "info": "Simulación y publicación MQTT sin nodos Function."
+    },
+    {
+        "id": "air_dash_26",
+        "type": "tab",
+        "label": "leccion Aire - Cliente Dashboard",
+        "disabled": false,
+        "info": "Recepción exclusivamente MQTT y visualización."
+    },
+    {
+        "id": "camila_cliente",
+        "type": "tab",
+        "label": "examen Camila - Cliente REST",
+        "disabled": false,
+        "info": "Dos botones consultan GET /API/6toB/Camila con diferentes parámetros."
+    },
+    {
+        "id": "camila_servidor",
+        "type": "tab",
+        "label": "examen Camila - Servidor REST",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cb2a26858fe8434c",
+        "type": "tab",
+        "label": "Consolidado de laboratorios",
+        "disabled": false,
+        "info": "Inicio y doce páginas Markdown en /consolidado/inicio",
+        "env": []
+    },
+    {
+        "id": "44c934199cb4f5cd",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "abd5cbcadf4bc0e9",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "68292cb516f5edf7",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d74ce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "3bc333a5210fbc7b",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "68292cb516f5edf7",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 3
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 6
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 9
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "3482ac6d4be8faca",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "3bc333a5210fbc7b",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "config_mosquitto_local",
+        "type": "mqtt-broker",
+        "name": "Mosquitto PC",
+        "broker": "localhost",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "tls_config_hivemq",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "config_hivemq_cloud",
+        "type": "mqtt-broker",
+        "name": "HiveMQ Cloud Server",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "tls": "tls_config_hivemq",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ui_tab_x20",
+        "type": "ui_tab",
+        "name": "Inicio",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui_group_x20",
+        "type": "ui_group",
+        "name": "Principal",
+        "tab": "ui_tab_x20",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4936354f3cda4a49",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "iot_broker_x20",
+        "type": "mqtt-broker",
+        "name": "HiveMQ IoT MQTT Panel 1883",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ui_message_group_x20",
+        "type": "ui_group",
+        "name": "Mensajería MQTT",
+        "tab": "ui_tab_x20",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "air_bs",
+        "type": "mqtt-broker",
+        "name": "aire-sensor-01a16992",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "aire-sensor-01a16992",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "air_bd",
+        "type": "mqtt-broker",
+        "name": "aire-dashboard-01a16992",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "aire-dashboard-01a16992",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "air_tab",
+        "type": "ui_tab",
+        "name": "Calidad del Aire",
+        "icon": "eco",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "air_g",
+        "type": "ui_group",
+        "name": "Sensores y tendencias",
+        "tab": "air_tab",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "air_e",
+        "type": "ui_group",
+        "name": "Estado del sistema",
+        "tab": "air_tab",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "camila_tab",
+        "type": "ui_tab",
+        "name": "API REST Camila",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "camila_group",
+        "type": "ui_group",
+        "name": "Cliente REST - Camila",
+        "tab": "camila_tab",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "camila_edit_group",
+        "type": "ui_group",
+        "name": "Cambiar ubicación",
+        "tab": "camila_tab",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "47944c5e217a6a68",
+        "type": "ui_tab",
+        "name": "Leccion 5",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "521ceeab4866a391",
+        "type": "ui_tab",
+        "name": "Grafica x y z",
+        "icon": "show_chart",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "50b15bde34359d6e",
+        "type": "ui_group",
+        "name": "Alarma",
+        "tab": "47944c5e217a6a68",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "36fd76671786cbd7",
+        "type": "ui_group",
+        "name": "Controles",
+        "tab": "47944c5e217a6a68",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "73f40b73634cb8bf",
+        "type": "ui_group",
+        "name": "Medidor",
+        "tab": "47944c5e217a6a68",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "db6ae6791c9f91c1",
+        "type": "ui_group",
+        "name": "Fecha y valor",
+        "tab": "47944c5e217a6a68",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8137b18823277626",
+        "type": "ui_group",
+        "name": "Sensor",
+        "tab": "47944c5e217a6a68",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3dfc479191b97b30",
+        "type": "ui_group",
+        "name": "Estado",
+        "tab": "521ceeab4866a391",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "hmd2uitheme0001",
+        "type": "ui-theme",
+        "name": "Tema",
+        "colors": {
+            "surface": "#0094CE",
+            "primary": "#0094CE",
+            "bgPage": "#f5f5f5",
+            "groupBg": "#ffffff",
+            "groupOutline": "#e0e0e0"
+        },
+        "sizes": {
+            "density": "compact",
+            "pagePadding": "6px",
+            "groupGap": "6px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "6px"
+        }
+    },
+    {
+        "id": "d2page1880restsrv",
+        "type": "ui-page",
+        "name": "Servidor REST",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/servidor-rest",
+        "icon": "thermometer",
+        "layout": "grid",
+        "theme": "hmd2uitheme0001",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            },
+            {
+                "name": "Tablet",
+                "px": 576,
+                "cols": 12
+            },
+            {
+                "name": "Small Desktop",
+                "px": 768,
+                "cols": 12
+            },
+            {
+                "name": "Desktop",
+                "px": 1024,
+                "cols": 12
+            }
+        ],
+        "order": 15,
+        "className": "",
+        "visible": false,
+        "disabled": "false"
+    },
+    {
+        "id": "d2grp1880resttemp",
+        "type": "ui-group",
+        "name": "Temperatura",
+        "page": "d2page1880restsrv",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "d2grp1880resthum",
+        "type": "ui-group",
+        "name": "Humedad",
+        "page": "d2page1880restsrv",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "789e24478f235b3e",
+        "type": "ui-theme",
+        "name": "Consolidado",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d74ce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "2ea980349d2cb319",
+        "type": "ui-page",
+        "name": "Inicio",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/inicio",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6758f55270f2a5f9",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "2ea980349d2cb319",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "a9db0994c3397849",
+        "type": "ui-page",
+        "name": "Hola Mundo",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-01",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ad65a11d67b430f4",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "a9db0994c3397849",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "f4516cbd781b4a9d",
+        "type": "ui-page",
+        "name": "Clase 4 · Ejercicio 1",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-02",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "5df96c51435223ca",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "f4516cbd781b4a9d",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "50a72966fa059f70",
+        "type": "ui-page",
+        "name": "Clase 4 · Ejercicio 2",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-03",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "51e3e84797efb57f",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "50a72966fa059f70",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "f759418d450a922b",
+        "type": "ui-page",
+        "name": "Clase 4 · Ejercicio 3",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-04",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 6,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c1e107a6f0e8072e",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "f759418d450a922b",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "738ed96c52ec2606",
+        "type": "ui-page",
+        "name": "Servidor REST",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-05",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 7,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "1b34804151613d11",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "738ed96c52ec2606",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "233fd54f748ea585",
+        "type": "ui-page",
+        "name": "Puente Mosquitto a HiveMQ",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-06",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 8,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7b64562e55ca5dbf",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "233fd54f748ea585",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "954901333e5d823f",
+        "type": "ui-page",
+        "name": "Orquestador MQTT",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-07",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": 0,
+                "cols": 12
+            }
+        ],
+        "order": 9,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "9c89a5b894c8c4da",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "954901333e5d823f",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "a2db3407fd9a39e7",
+        "type": "ui-page",
+        "name": "CLASE CONJUNTA - Dashboard MQTT",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-08",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "12"
+            }
+        ],
+        "order": 10,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "167792f768a2016d",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "a2db3407fd9a39e7",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "dc37fe6540e3fd1b",
+        "type": "ui-page",
+        "name": "LECCION - Aire · Cliente sensor",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-09",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "12"
+            }
+        ],
+        "order": 11,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "ff1714e5cdae7a22",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "dc37fe6540e3fd1b",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "282c805ee2148e0a",
+        "type": "ui-page",
+        "name": "LECCION - Aire · Cliente dashboard",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-10",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "12"
+            }
+        ],
+        "order": 12,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c5f194a8c18f260e",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "282c805ee2148e0a",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "81a0bbeeccf8f529",
+        "type": "ui-page",
+        "name": "EXAMEN · Cliente REST",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-11",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "12"
+            }
+        ],
+        "order": 13,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "11a3c93e11b795d5",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "81a0bbeeccf8f529",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "52f4780bee39330c",
+        "type": "ui-page",
+        "name": "EXAMEN · Servidor REST",
+        "ui": "abd5cbcadf4bc0e9",
+        "path": "/laboratorio-12",
+        "icon": "flask-outline",
+        "layout": "grid",
+        "theme": "789e24478f235b3e",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "12"
+            }
+        ],
+        "order": 14,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "5ee465a5b288431d",
+        "type": "ui-group",
+        "name": "Documentación",
+        "page": "52f4780bee39330c",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": true,
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "df3dfeb14c384cf3",
+        "type": "inject",
+        "z": "dfb14b698d70febb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "temp",
+                "v": "23.3",
+                "vt": "num"
+            },
+            {
+                "p": "hum",
+                "v": "72.3",
+                "vt": "num"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "Clase 1",
+        "payload": "Hola mundo",
+        "payloadType": "str",
+        "x": 220,
+        "y": 40,
+        "wires": [
+            [
+                "9450074d91529686"
+            ]
+        ]
+    },
+    {
+        "id": "3169125634d17242",
+        "type": "debug",
+        "z": "dfb14b698d70febb",
+        "name": "JSON",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fa6bf8ddb9ba802a",
+        "type": "inject",
+        "z": "dfb14b698d70febb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "Sensor 1",
+        "payload": "{\"temp\":23.3,\"hum\":72.3,\"name\":\"Abi\"}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "3169125634d17242",
+                "10be1006e65ad097",
+                "b06934c1dcbf7fa2",
+                "c4aabbb327f4abe1"
+            ]
+        ]
+    },
+    {
+        "id": "9450074d91529686",
+        "type": "random",
+        "z": "dfb14b698d70febb",
+        "name": "",
+        "low": 1,
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 480,
+        "y": 40,
+        "wires": [
+            [
+                "721445ae40edc8cd"
+            ]
+        ]
+    },
+    {
+        "id": "721445ae40edc8cd",
+        "type": "function",
+        "z": "dfb14b698d70febb",
+        "name": "function 1",
+        "func": "if (msg.payload > 50) {\nmsg.payload = \"Alarma mayor a 50\";\n} else {\nmsg = null;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 80,
+        "wires": [
+            [
+                "3169125634d17242"
+            ]
+        ]
+    },
+    {
+        "id": "10be1006e65ad097",
+        "type": "change",
+        "z": "dfb14b698d70febb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "da78125ddd7f0ddb"
+            ]
+        ]
+    },
+    {
+        "id": "b06934c1dcbf7fa2",
+        "type": "change",
+        "z": "dfb14b698d70febb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.hum",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 340,
+        "wires": [
+            [
+                "14b4bd1cfe8de3bc"
+            ]
+        ]
+    },
+    {
+        "id": "c4aabbb327f4abe1",
+        "type": "change",
+        "z": "dfb14b698d70febb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "da4f8cfd478043ea"
+            ]
+        ]
+    },
+    {
+        "id": "da78125ddd7f0ddb",
+        "type": "debug",
+        "z": "dfb14b698d70febb",
+        "name": "temp",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 550,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "14b4bd1cfe8de3bc",
+        "type": "debug",
+        "z": "dfb14b698d70febb",
+        "name": "Hum",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "da4f8cfd478043ea",
+        "type": "debug",
+        "z": "dfb14b698d70febb",
+        "name": "name",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "e1_inj",
+        "type": "inject",
+        "z": "t_ej1",
+        "name": "Click: generar dato",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "e1_rnd"
+            ]
+        ]
+    },
+    {
+        "id": "e1_rnd",
+        "type": "random",
+        "z": "t_ej1",
+        "name": "Random 0-40",
+        "low": 0,
+        "high": 40,
+        "inte": "false",
+        "property": "payload",
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "e1_dbg_raw",
+                "e1_ft",
+                "e1_fh"
+            ]
+        ]
+    },
+    {
+        "id": "e1_dbg_raw",
+        "type": "debug",
+        "z": "t_ej1",
+        "name": "Dato aleatorio",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e1_ft",
+        "type": "function",
+        "z": "t_ej1",
+        "name": "Temperatura (x10)",
+        "func": "var randomValue = msg.payload;\nmsg.payload = (randomValue * 10);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 160,
+        "wires": [
+            [
+                "e1_dbg_t",
+                "e1_fat"
+            ]
+        ]
+    },
+    {
+        "id": "e1_dbg_t",
+        "type": "debug",
+        "z": "t_ej1",
+        "name": "Temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e1_fat",
+        "type": "function",
+        "z": "t_ej1",
+        "name": "Alarma temp > 50",
+        "func": "if (msg.payload > 50) {\n  msg.payload = \"Alarma mayor a 50\";\n} else {\n  msg = null;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 200,
+        "wires": [
+            [
+                "e1_dbg_at"
+            ]
+        ]
+    },
+    {
+        "id": "e1_dbg_at",
+        "type": "debug",
+        "z": "t_ej1",
+        "name": "Alarma temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e1_fh",
+        "type": "function",
+        "z": "t_ej1",
+        "name": "Humedad (x3 + 2.5)",
+        "func": "var randomValue = msg.payload;\nmsg.payload = ((randomValue * 3) + 2.5);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 300,
+        "wires": [
+            [
+                "e1_dbg_h",
+                "e1_fah"
+            ]
+        ]
+    },
+    {
+        "id": "e1_dbg_h",
+        "type": "debug",
+        "z": "t_ej1",
+        "name": "Humedad",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e1_fah",
+        "type": "function",
+        "z": "t_ej1",
+        "name": "Alarma hum > 90",
+        "func": "if (msg.payload > 90) {\n  msg.payload = \"Alarma mayor a 90\";\n} else {\n  msg = null;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "e1_dbg_ah"
+            ]
+        ]
+    },
+    {
+        "id": "e1_dbg_ah",
+        "type": "debug",
+        "z": "t_ej1",
+        "name": "Alarma humedad",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e2_inj",
+        "type": "inject",
+        "z": "t_ej2",
+        "name": "Click: generar dato",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 240,
+        "wires": [
+            [
+                "e2_rnd"
+            ]
+        ]
+    },
+    {
+        "id": "e2_rnd",
+        "type": "random",
+        "z": "t_ej2",
+        "name": "Random 0-40",
+        "low": 0,
+        "high": 40,
+        "inte": "false",
+        "property": "payload",
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "e2_ft",
+                "e2_fh"
+            ]
+        ]
+    },
+    {
+        "id": "e2_ft",
+        "type": "function",
+        "z": "t_ej2",
+        "name": "Temperatura (x10, 2 dec)",
+        "func": "var randomValue = msg.payload;\nmsg.payload = (randomValue * 10).toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 120,
+        "wires": [
+            [
+                "e2_dbg_t",
+                "e2_swt"
+            ]
+        ]
+    },
+    {
+        "id": "e2_dbg_t",
+        "type": "debug",
+        "z": "t_ej2",
+        "name": "Temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "e2_swt",
+        "type": "switch",
+        "z": "t_ej2",
+        "name": "Temp > 50",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "50",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 820,
+        "y": 160,
+        "wires": [
+            [
+                "e2_cht"
+            ]
+        ]
+    },
+    {
+        "id": "e2_cht",
+        "type": "change",
+        "z": "t_ej2",
+        "name": "Texto alarma temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Alarma mayor a 50",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 160,
+        "wires": [
+            [
+                "e2_dbg_at"
+            ]
+        ]
+    },
+    {
+        "id": "e2_dbg_at",
+        "type": "debug",
+        "z": "t_ej2",
+        "name": "Alarma temperatura",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e2_fh",
+        "type": "function",
+        "z": "t_ej2",
+        "name": "Humedad (x3+2.5, 2 dec)",
+        "func": "var randomValue = msg.payload;\nmsg.payload = ((randomValue * 3) + 2.5).toFixed(2);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 300,
+        "wires": [
+            [
+                "e2_dbg_h",
+                "e2_swh"
+            ]
+        ]
+    },
+    {
+        "id": "e2_dbg_h",
+        "type": "debug",
+        "z": "t_ej2",
+        "name": "Humedad",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e2_swh",
+        "type": "switch",
+        "z": "t_ej2",
+        "name": "Hum > 90",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "90",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "e2_chh"
+            ]
+        ]
+    },
+    {
+        "id": "e2_chh",
+        "type": "change",
+        "z": "t_ej2",
+        "name": "Texto alarma hum",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Alarma mayor a 90",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 340,
+        "wires": [
+            [
+                "e2_dbg_ah"
+            ]
+        ]
+    },
+    {
+        "id": "e2_dbg_ah",
+        "type": "debug",
+        "z": "t_ej2",
+        "name": "Alarma humedad",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e3_inj",
+        "type": "inject",
+        "z": "t_ej3",
+        "name": "JSON temp/hum/name",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"temp\": 23, \"hum\": 88, \"name\": \"pepito\"}",
+        "payloadType": "json",
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "e3_dbg_msg",
+                "e3_ct",
+                "e3_ch",
+                "e3_cn"
+            ]
+        ]
+    },
+    {
+        "id": "e3_dbg_msg",
+        "type": "debug",
+        "z": "t_ej3",
+        "name": "msg",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "e3_ct",
+        "type": "change",
+        "z": "t_ej3",
+        "name": "payload = temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "e3_dbg_t",
+                "e3_c2"
+            ]
+        ]
+    },
+    {
+        "id": "e3_dbg_t",
+        "type": "debug",
+        "z": "t_ej3",
+        "name": "temp",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 130,
+        "wires": []
+    },
+    {
+        "id": "e3_c2",
+        "type": "change",
+        "z": "t_ej3",
+        "name": "ciudad + topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ciudad",
+                "pt": "msg",
+                "to": "Machala",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "temperatura",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 200,
+        "wires": [
+            [
+                "e3_dbg_new"
+            ]
+        ]
+    },
+    {
+        "id": "e3_dbg_new",
+        "type": "debug",
+        "z": "t_ej3",
+        "name": "temp + ciudad",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e3_ch",
+        "type": "change",
+        "z": "t_ej3",
+        "name": "payload = hum",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.hum",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "e3_dbg_h"
+            ]
+        ]
+    },
+    {
+        "id": "e3_dbg_h",
+        "type": "debug",
+        "z": "t_ej3",
+        "name": "hum",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e3_cn",
+        "type": "change",
+        "z": "t_ej3",
+        "name": "payload = name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.name",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 400,
+        "y": 340,
+        "wires": [
+            [
+                "e3_dbg_n"
+            ]
+        ]
+    },
+    {
+        "id": "e3_dbg_n",
+        "type": "debug",
+        "z": "t_ej3",
+        "name": "name",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "rest1880httpin0001",
+        "type": "http in",
+        "z": "rest1880tabserver01",
+        "name": "",
+        "url": "/sensores/:temp/:hum",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "rest1880fnext00001"
+            ]
+        ]
+    },
+    {
+        "id": "rest1880fnext00001",
+        "type": "function",
+        "z": "rest1880tabserver01",
+        "name": "extrae temp y hum",
+        "func": "const params = (msg.req && msg.req.params) || {};\nif (params.temp !== undefined && params.hum !== undefined) {\n    const temp = Number(params.temp);\n    const hum = Number(params.hum);\n    if (!Number.isNaN(temp)) { flow.set('lastTemp', temp); }\n    if (!Number.isNaN(hum)) { flow.set('lastHum', hum); }\n    flow.set('lastAt', new Date().toLocaleTimeString());\n}\nconst temp = Number(flow.get('lastTemp'));\nconst hum = Number(flow.get('lastHum'));\nconst ARC = 251.2; // half circumference for r=80\nmsg.temp = Number.isNaN(temp) ? '--' : temp;\nmsg.hum = Number.isNaN(hum) ? '--' : hum;\nmsg.lastAt = flow.get('lastAt') || 'esperando datos...';\nmsg.tempBar = Number.isNaN(temp) ? 0 : Math.max(0, Math.min(100, temp * 2));\nmsg.humBar = Number.isNaN(hum) ? 0 : Math.max(0, Math.min(100, hum));\nmsg.tempArc = Number.isNaN(temp) ? 0 : +(ARC * Math.max(0, Math.min(1, temp / 50))).toFixed(1);\nmsg.humArc = Number.isNaN(hum) ? 0 : +(ARC * Math.max(0, Math.min(1, hum / 100))).toFixed(1);\nmsg.payload = { temp: msg.temp, hum: msg.hum };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 160,
+        "wires": [
+            [
+                "rest1880dbgsrv0001",
+                "rest1880tmpl000001",
+                "rest1880chgtmp0001",
+                "rest1880chghum0001"
+            ]
+        ]
+    },
+    {
+        "id": "rest1880dbgsrv0001",
+        "type": "debug",
+        "z": "rest1880tabserver01",
+        "name": "Server REST",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "rest1880tmpl000001",
+        "type": "template",
+        "z": "rest1880tabserver01",
+        "name": "pagina Server REST",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta http-equiv=\"refresh\" content=\"3;url=/sensores\">\n<title>Server REST</title>\n<style>\n  :root {\n    --bg: #0b0f12;\n    --card: #151a1e;\n    --cyan: #3ec6d8;\n    --orange: #ff8a3d;\n    --text: #f3f6f8;\n    --muted: #9aa4ab;\n  }\n  * { box-sizing: border-box; }\n  body {\n    margin: 0;\n    min-height: 100vh;\n    font-family: \"Segoe UI\", Arial, sans-serif;\n    color: var(--text);\n    background: #0b0f12;\n  }\n  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px 50px; }\n  .hero {\n    display: flex; align-items: center; gap: 16px;\n    background: #12181d;\n    border-radius: 16px;\n    padding: 18px 22px;\n    margin-bottom: 22px;\n  }\n  .logo {\n    width: 54px; height: 54px; border-radius: 50%;\n    display: grid; place-items: center;\n    border: 2px solid var(--cyan);\n    background: rgba(62,198,216,.08);\n    font-size: 24px;\n  }\n  h1 { margin: 0; color: var(--cyan); letter-spacing: .5px; font-size: 26px; }\n  .badge { margin-top: 6px; color: var(--muted); font-size: 13px; }\n  .grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));\n    gap: 16px;\n  }\n  .card {\n    background: var(--card);\n    border-radius: 14px;\n    padding: 18px 12px 22px;\n    text-align: center;\n  }\n  .title {\n    text-align: left;\n    padding: 0 10px 6px;\n    font-size: 22px;\n    font-weight: 600;\n  }\n  .gauge { width: 100%; max-width: 340px; margin: 0 auto; }\n  .label { fill: var(--muted); font-size: 16px; }\n  .value { fill: #fff; font-size: 42px; font-weight: 700; }\n  .unit { fill: var(--muted); font-size: 16px; }\n  footer { margin-top: 18px; color: #6b767c; font-size: 12px; }\n</style>\n</head>\n<body>\n  <div class=\"wrap\">\n    <div class=\"hero\">\n      <div class=\"logo\">📡</div>\n      <div>\n        <h1>SERVER REST</h1>\n        <div class=\"badge\">Hola Mundo! Bienvenido a mi pagina web desarrollada con Node-RED</div>\n      </div>\n    </div>\n    <div class=\"grid\">\n      <div class=\"card\">\n        <div class=\"title\">Temperatura</div>\n        <svg class=\"gauge\" viewBox=\"0 0 200 130\">\n          <path d=\"M20 110 A80 80 0 0 1 180 110\" fill=\"none\" stroke=\"#2a3136\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M20 110 A80 80 0 0 1 180 110\" fill=\"none\" stroke=\"var(--orange)\" stroke-width=\"16\" stroke-linecap=\"round\"\n                stroke-dasharray=\"{{tempArc}} 251.2\"/>\n          <text class=\"label\" x=\"100\" y=\"58\" text-anchor=\"middle\">Temperatura</text>\n          <text class=\"value\" x=\"100\" y=\"96\" text-anchor=\"middle\">{{temp}}</text>\n          <text class=\"unit\" x=\"100\" y=\"114\" text-anchor=\"middle\">C</text>\n          <text class=\"unit\" x=\"28\" y=\"128\" text-anchor=\"middle\">0</text>\n          <text class=\"unit\" x=\"172\" y=\"128\" text-anchor=\"middle\">50</text>\n        </svg>\n      </div>\n      <div class=\"card\">\n        <div class=\"title\">Humedad</div>\n        <svg class=\"gauge\" viewBox=\"0 0 200 130\">\n          <path d=\"M20 110 A80 80 0 0 1 180 110\" fill=\"none\" stroke=\"#2a3136\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n          <path d=\"M20 110 A80 80 0 0 1 180 110\" fill=\"none\" stroke=\"var(--cyan)\" stroke-width=\"16\" stroke-linecap=\"round\"\n                stroke-dasharray=\"{{humArc}} 251.2\"/>\n          <text class=\"label\" x=\"100\" y=\"58\" text-anchor=\"middle\">Humedad</text>\n          <text class=\"value\" x=\"100\" y=\"96\" text-anchor=\"middle\">{{hum}}</text>\n          <text class=\"unit\" x=\"100\" y=\"114\" text-anchor=\"middle\">%</text>\n          <text class=\"unit\" x=\"28\" y=\"128\" text-anchor=\"middle\">0</text>\n          <text class=\"unit\" x=\"172\" y=\"128\" text-anchor=\"middle\">100</text>\n        </svg>\n      </div>\n    </div>\n    <footer>Monitoreo en vivo · ultima lectura {{lastAt}}</footer>\n  </div>\n</body>\n</html>\n",
+        "output": "str",
+        "x": 690,
+        "y": 160,
+        "wires": [
+            [
+                "rest1880httpout001"
+            ]
+        ]
+    },
+    {
+        "id": "rest1880httpout001",
+        "type": "http response",
+        "z": "rest1880tabserver01",
+        "name": "OK",
+        "statusCode": "200",
+        "headers": {
+            "Content-Type": "text/html; charset=utf-8"
+        },
+        "x": 890,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "rest1880chgtmp0001",
+        "type": "change",
+        "z": "rest1880tabserver01",
+        "name": "payload = temp",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "temp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [
+                "d2gauge1880temp01"
+            ]
+        ]
+    },
+    {
+        "id": "rest1880chghum0001",
+        "type": "change",
+        "z": "rest1880tabserver01",
+        "name": "payload = hum",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "hum",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 300,
+        "wires": [
+            [
+                "d2gauge1880hum001"
+            ]
+        ]
+    },
+    {
+        "id": "d2gauge1880temp01",
+        "type": "ui-gauge",
+        "z": "rest1880tabserver01",
+        "name": "",
+        "group": "d2grp1880resttemp",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 6,
+        "height": 5,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "C",
+        "icon": "",
+        "prefix": "",
+        "suffix": " C",
+        "segments": [
+            {
+                "color": "#ff8c42",
+                "from": 0
+            }
+        ],
+        "min": 0,
+        "max": 50,
+        "sizeThickness": 16,
+        "sizeGap": 0,
+        "sizeKeyThickness": 2,
+        "styleRounded": false,
+        "styleGlow": false,
+        "className": "",
+        "x": 900,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2gauge1880hum001",
+        "type": "ui-gauge",
+        "z": "rest1880tabserver01",
+        "name": "",
+        "group": "d2grp1880resthum",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 6,
+        "height": 5,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": true,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": " %",
+        "segments": [
+            {
+                "color": "#2ec4d6",
+                "from": 0
+            }
+        ],
+        "min": 0,
+        "max": 100,
+        "sizeThickness": 16,
+        "sizeGap": 0,
+        "sizeKeyThickness": 2,
+        "styleRounded": false,
+        "styleGlow": false,
+        "className": "",
+        "x": 900,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "rest1880httpinlive1",
+        "type": "http in",
+        "z": "rest1880tabserver01",
+        "name": "",
+        "url": "/sensores",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 260,
+        "wires": [
+            [
+                "rest1880fnext00001"
+            ]
+        ]
+    },
+    {
+        "id": "node_mqtt_in_local",
+        "type": "mqtt in",
+        "z": "flow_puente_mqtt",
+        "name": "Mosquitto Local",
+        "topic": "FIC/6B/Abi/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "config_mosquitto_local",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "node_debug",
+                "node_mqtt_out_cloud"
+            ]
+        ]
+    },
+    {
+        "id": "node_debug",
+        "type": "debug",
+        "z": "flow_puente_mqtt",
+        "name": "Ver Mensaje",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 430,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "node_mqtt_out_cloud",
+        "type": "mqtt out",
+        "z": "flow_puente_mqtt",
+        "name": "HiveMQ Cloud",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "iot_broker_x20",
+        "x": 500,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3228acb57fd5c658",
+        "type": "mqtt in",
+        "z": "1377b1a4bf471aa6",
+        "name": "Mosquitto Local (PC)",
+        "topic": "FIC/6B/Abi/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "config_mosquitto_local",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "fbf131c92d6c7503",
+                "4575772a68222f9b"
+            ]
+        ]
+    },
+    {
+        "id": "35d995e296d6e135",
+        "type": "mqtt in",
+        "z": "1377b1a4bf471aa6",
+        "name": "HiveMQ Cloud (Celular)",
+        "topic": "fic/6B/Abi/#",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "config_hivemq_cloud",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "4236d57ecf5b6a7e"
+            ]
+        ]
+    },
+    {
+        "id": "fbf131c92d6c7503",
+        "type": "debug",
+        "z": "1377b1a4bf471aa6",
+        "name": "Ver Mensaje",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "4575772a68222f9b",
+        "type": "mqtt out",
+        "z": "1377b1a4bf471aa6",
+        "name": "Subir a HiveMQ",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "config_hivemq_cloud",
+        "x": 460,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4236d57ecf5b6a7e",
+        "type": "mqtt out",
+        "z": "1377b1a4bf471aa6",
+        "name": "Bajar a Mosquitto Local",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "config_mosquitto_local",
+        "x": 490,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "762de06d55c1e2d9",
+        "type": "inject",
+        "z": "b9ae83c5d00795a4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "temp",
+                "v": "23.33",
+                "vt": "num"
+            },
+            {
+                "p": "hum",
+                "v": "72.34",
+                "vt": "num"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Clase 1",
+        "payloadType": "str",
+        "x": 120,
+        "y": 820,
+        "wires": [
+            [
+                "9703a2cb55bb3cd1"
+            ]
+        ]
+    },
+    {
+        "id": "8a0cced2121f209f",
+        "type": "debug",
+        "z": "b9ae83c5d00795a4",
+        "name": "JSON",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "942b6725eb2178b1",
+        "type": "inject",
+        "z": "b9ae83c5d00795a4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "Sensor 1",
+        "payload": "{\"temp\":23.3,\"Hum\":88.8}",
+        "payloadType": "json",
+        "x": 220,
+        "y": 680,
+        "wires": [
+            [
+                "8a0cced2121f209f",
+                "2c8abc4f90e27308",
+                "9555f4c3fb4ab612",
+                "20020127af6f993a"
+            ]
+        ]
+    },
+    {
+        "id": "5e0ea0a967b91fc7",
+        "type": "function",
+        "z": "b9ae83c5d00795a4",
+        "name": "function 1",
+        "func": "var randomValue = msg.payload;\nmsg.payload = (randomValue * 10);\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 820,
+        "wires": [
+            [
+                "8a0cced2121f209f"
+            ]
+        ]
+    },
+    {
+        "id": "2c8abc4f90e27308",
+        "type": "change",
+        "z": "b9ae83c5d00795a4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temp",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 640,
+        "wires": [
+            [
+                "f2c4a452ae92610e"
+            ]
+        ]
+    },
+    {
+        "id": "9555f4c3fb4ab612",
+        "type": "change",
+        "z": "b9ae83c5d00795a4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 680,
+        "wires": [
+            [
+                "bd22d394524d9162"
+            ]
+        ]
+    },
+    {
+        "id": "20020127af6f993a",
+        "type": "change",
+        "z": "b9ae83c5d00795a4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 720,
+        "wires": [
+            [
+                "5fe70984c51194b8"
+            ]
+        ]
+    },
+    {
+        "id": "f2c4a452ae92610e",
+        "type": "debug",
+        "z": "b9ae83c5d00795a4",
+        "name": "temp",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "bd22d394524d9162",
+        "type": "debug",
+        "z": "b9ae83c5d00795a4",
+        "name": "hum",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5fe70984c51194b8",
+        "type": "debug",
+        "z": "b9ae83c5d00795a4",
+        "name": "name",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "0e7ce591b4ad6d33",
+        "type": "switch",
+        "z": "b9ae83c5d00795a4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 900,
+        "wires": [
+            [
+                "10328ff6a37439c4"
+            ]
+        ]
+    },
+    {
+        "id": "8969e166e8dbf691",
+        "type": "debug",
+        "z": "b9ae83c5d00795a4",
+        "name": "alarma",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "10328ff6a37439c4",
+        "type": "change",
+        "z": "b9ae83c5d00795a4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "alarma",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 900,
+        "wires": [
+            [
+                "8969e166e8dbf691"
+            ]
+        ]
+    },
+    {
+        "id": "9703a2cb55bb3cd1",
+        "type": "random",
+        "z": "b9ae83c5d00795a4",
+        "name": "",
+        "low": 1,
+        "high": "100",
+        "inte": "false",
+        "property": "payload",
+        "x": 300,
+        "y": 820,
+        "wires": [
+            [
+                "5e0ea0a967b91fc7",
+                "0e7ce591b4ad6d33"
+            ]
+        ]
+    },
+    {
+        "id": "ui_status_x20",
+        "type": "ui_text",
+        "z": "b9ae83c5d00795a4",
+        "group": "ui_group_x20",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Estado del dashboard",
+        "label": "Estado",
+        "format": "Dashboard operativo",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#2e7d32",
+        "x": 1440,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "iot_inject_x20",
+        "type": "inject",
+        "z": "b9ae83c5d00795a4",
+        "name": "Enviar datos al celular cada 5 s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.5,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "iot_json_x20"
+            ]
+        ]
+    },
+    {
+        "id": "iot_json_x20",
+        "type": "function",
+        "z": "b9ae83c5d00795a4",
+        "name": "JSON tem + hum",
+        "func": "const tem = Number((20 + Math.random() * 15).toFixed(1));\nconst hum = Number((45 + Math.random() * 45).toFixed(1));\nconst payload = JSON.stringify({ tem, hum });\nreturn [{ payload }, { payload }];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 120,
+        "wires": [
+            [
+                "iot_mqtt_temp_x20",
+                "iot_debug_x20"
+            ],
+            [
+                "iot_mqtt_hum_x20"
+            ]
+        ]
+    },
+    {
+        "id": "iot_mqtt_temp_x20",
+        "type": "mqtt out",
+        "z": "b9ae83c5d00795a4",
+        "name": "IoT Panel Temperatura",
+        "topic": "FIC/6B/Abi/",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "application/json",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "iot_broker_x20",
+        "x": 800,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "iot_mqtt_hum_x20",
+        "type": "mqtt out",
+        "z": "b9ae83c5d00795a4",
+        "name": "IoT Panel Humedad",
+        "topic": "fic/6B/Abi/",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "application/json",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "iot_broker_x20",
+        "x": 800,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "iot_debug_x20",
+        "type": "debug",
+        "z": "b9ae83c5d00795a4",
+        "name": "JSON enviado a IoT MQTT Panel",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "dash_mqtt_in_x20",
+        "type": "mqtt in",
+        "z": "b9ae83c5d00795a4",
+        "name": "Recibir datos para dashboard",
+        "topic": "FIC/6B/Abi/",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "iot_broker_x20",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 360,
+        "wires": [
+            [
+                "dash_split_x20"
+            ]
+        ]
+    },
+    {
+        "id": "dash_split_x20",
+        "type": "function",
+        "z": "b9ae83c5d00795a4",
+        "name": "Separar tem y hum",
+        "func": "let data = msg.payload;\nif (typeof data === 'string') { try { data = JSON.parse(data); } catch(e) { return null; } }\nconst tem = Number(data.tem);\nconst hum = Number(data.hum);\nif (!Number.isFinite(tem) || !Number.isFinite(hum)) return null;\nreturn [\n {payload:tem},\n {payload:hum},\n [{payload:tem,topic:'Temperatura'},{payload:hum,topic:'Humedad'}]\n];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 360,
+        "wires": [
+            [
+                "dash_gauge_temp_x20"
+            ],
+            [
+                "dash_gauge_hum_x20"
+            ],
+            [
+                "dash_chart_x20"
+            ]
+        ]
+    },
+    {
+        "id": "dash_gauge_temp_x20",
+        "type": "ui_gauge",
+        "z": "b9ae83c5d00795a4",
+        "name": "Temperatura dashboard",
+        "group": "ui_group_x20",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "40",
+        "diff": false,
+        "className": "",
+        "x": 700,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "dash_gauge_hum_x20",
+        "type": "ui_gauge",
+        "z": "b9ae83c5d00795a4",
+        "name": "Humedad dashboard",
+        "group": "ui_group_x20",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Humedad",
+        "label": "%",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00bcd4",
+            "#2196f3",
+            "#3f51b5"
+        ],
+        "seg1": "33",
+        "seg2": "67",
+        "diff": false,
+        "className": "",
+        "x": 690,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "dash_chart_x20",
+        "type": "ui_chart",
+        "z": "b9ae83c5d00795a4",
+        "name": "Histórico dashboard",
+        "group": "ui_group_x20",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "label": "Temperatura y humedad",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Esperando datos...",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff5722",
+            "#2196f3",
+            "#2ca02c",
+            "#d62728",
+            "#9467bd",
+            "#8c564b",
+            "#e377c2",
+            "#7f7f7f",
+            "#bcbd22"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 690,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui_msg_input_x20",
+        "type": "ui_text_input",
+        "z": "b9ae83c5d00795a4",
+        "name": "Escribir mensaje MQTT",
+        "label": "Mensaje (Enter para enviar)",
+        "tooltip": "",
+        "group": "ui_message_group_x20",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "str",
+        "x": 190,
+        "y": 300,
+        "wires": [
+            [
+                "msg_prepare_x20"
+            ]
+        ]
+    },
+    {
+        "id": "msg_prepare_x20",
+        "type": "function",
+        "z": "b9ae83c5d00795a4",
+        "name": "Validar mensaje",
+        "func": "const texto = String(msg.payload ?? '').trim();\nif (!texto) return null;\nmsg.payload = texto;\nmsg.topic = 'FIC/6B/Abi/mensaje';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "msg_mqtt_out_x20",
+                "msg_debug_x20"
+            ]
+        ]
+    },
+    {
+        "id": "msg_mqtt_out_x20",
+        "type": "mqtt out",
+        "z": "b9ae83c5d00795a4",
+        "name": "Enviar mensaje MQTT",
+        "topic": "FIC/6B/Abi/mensaje",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "text/plain",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "iot_broker_x20",
+        "x": 690,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "msg_debug_x20",
+        "type": "debug",
+        "z": "b9ae83c5d00795a4",
+        "name": "Mensaje enviado desde dashboard",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "msg_mqtt_in_x20",
+        "type": "mqtt in",
+        "z": "b9ae83c5d00795a4",
+        "name": "Recibir mensajes MQTT",
+        "topic": "FIC/6B/Abi/mensaje",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "iot_broker_x20",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1150,
+        "y": 40,
+        "wires": [
+            [
+                "ui_msg_display_x20"
+            ]
+        ]
+    },
+    {
+        "id": "ui_msg_display_x20",
+        "type": "ui_text",
+        "z": "b9ae83c5d00795a4",
+        "group": "ui_message_group_x20",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "Último mensaje recibido",
+        "label": "Último mensaje recibido",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#333333",
+        "x": 1410,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "msg_env_mqtt_in_x20",
+        "type": "mqtt in",
+        "z": "b9ae83c5d00795a4",
+        "name": "Recibir mensajeenv del celular",
+        "topic": "FIC/6B/Abi/mensajeenv",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "iot_broker_x20",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1170,
+        "y": 120,
+        "wires": [
+            [
+                "ui_msg_env_display_x20",
+                "msg_env_debug_x20"
+            ]
+        ]
+    },
+    {
+        "id": "ui_msg_env_display_x20",
+        "type": "ui_text",
+        "z": "b9ae83c5d00795a4",
+        "group": "ui_message_group_x20",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Mensaje enviado desde celular",
+        "label": "Mensaje enviado desde celular",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1490,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "msg_env_debug_x20",
+        "type": "debug",
+        "z": "b9ae83c5d00795a4",
+        "name": "mensajeenv recibido",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "charts_inject_x20",
+        "type": "inject",
+        "z": "b9ae83c5d00795a4",
+        "name": "Actualizar charts cada 5 s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 500,
+        "wires": [
+            [
+                "charts_function_x20"
+            ]
+        ]
+    },
+    {
+        "id": "charts_function_x20",
+        "type": "function",
+        "z": "b9ae83c5d00795a4",
+        "name": "Datos independientes para charts",
+        "func": "const tem = Number((20 + Math.random()*15).toFixed(1));\nconst hum = Number((45 + Math.random()*45).toFixed(1));\nreturn [[{topic:'Temperatura',payload:tem},{topic:'Humedad',payload:hum}],[{topic:'Temperatura',payload:tem},{topic:'Humedad',payload:hum}]];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 500,
+        "wires": [
+            [
+                "ui_chart_bar_x20"
+            ],
+            [
+                "ui_chart_pie_x20"
+            ]
+        ]
+    },
+    {
+        "id": "ui_chart_bar_x20",
+        "type": "ui_chart",
+        "z": "b9ae83c5d00795a4",
+        "name": "Chart de barras",
+        "group": "ui_group_x20",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "label": "Comparación en barras",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Esperando datos",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#e74c3c",
+            "#3498db",
+            "#2ecc71",
+            "#f39c12",
+            "#9b59b6",
+            "#1abc9c",
+            "#34495e",
+            "#7f8c8d",
+            "#c0392b"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 900,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui_chart_pie_x20",
+        "type": "ui_chart",
+        "z": "b9ae83c5d00795a4",
+        "name": "Chart de dona",
+        "group": "ui_group_x20",
+        "order": 5,
+        "width": 6,
+        "height": 4,
+        "label": "Distribución actual",
+        "chartType": "pie",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Esperando datos",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 50,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#e74c3c",
+            "#3498db",
+            "#2ecc71",
+            "#f39c12",
+            "#9b59b6",
+            "#1abc9c",
+            "#34495e",
+            "#7f8c8d",
+            "#c0392b"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 900,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "air_csaqi",
+        "type": "comment",
+        "z": "air_sensor_26",
+        "name": "AQI · 60 s · utmach/segundo/aire/01a16992/aqi",
+        "info": "Inject fija el período. Random genera un entero dentro del rango. MQTT publica solo el número. Debug permite inspeccionar topic y payload.",
+        "x": 360,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "air_iaqi",
+        "type": "inject",
+        "z": "air_sensor_26",
+        "name": "AQI cada 60 s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "once": true,
+        "onceDelay": 1,
+        "topic": "utmach/segundo/aire/01a16992/aqi",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "air_raqi"
+            ]
+        ],
+        "info": "AQI cada 60 s"
+    },
+    {
+        "id": "air_raqi",
+        "type": "random",
+        "z": "air_sensor_26",
+        "name": "AQI 0–500",
+        "low": "0",
+        "high": "500",
+        "inte": "true",
+        "property": "payload",
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "air_oaqi",
+                "air_tx"
+            ]
+        ],
+        "info": "AQI 0–500"
+    },
+    {
+        "id": "air_oaqi",
+        "type": "mqtt out",
+        "z": "air_sensor_26",
+        "name": "Publicar AQI",
+        "topic": "utmach/segundo/aire/01a16992/aqi",
+        "qos": "0",
+        "retain": "true",
+        "broker": "air_bs",
+        "x": 650,
+        "y": 140,
+        "wires": [],
+        "info": "Publicar AQI"
+    },
+    {
+        "id": "air_csco2",
+        "type": "comment",
+        "z": "air_sensor_26",
+        "name": "CO₂ · 120 s · utmach/segundo/aire/01a16992/co2",
+        "info": "Inject fija el período. Random genera un entero dentro del rango. MQTT publica solo el número. Debug permite inspeccionar topic y payload.",
+        "x": 360,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "air_ico2",
+        "type": "inject",
+        "z": "air_sensor_26",
+        "name": "CO₂ cada 120 s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "120",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "utmach/segundo/aire/01a16992/co2",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "air_rco2"
+            ]
+        ],
+        "info": "CO₂ cada 120 s"
+    },
+    {
+        "id": "air_rco2",
+        "type": "random",
+        "z": "air_sensor_26",
+        "name": "CO₂ 300–2000",
+        "low": "300",
+        "high": "2000",
+        "inte": "true",
+        "property": "payload",
+        "x": 360,
+        "y": 280,
+        "wires": [
+            [
+                "air_oco2",
+                "air_tx",
+                "air_saveco2"
+            ]
+        ],
+        "info": "CO₂ 300–2000"
+    },
+    {
+        "id": "air_oco2",
+        "type": "mqtt out",
+        "z": "air_sensor_26",
+        "name": "Publicar CO₂",
+        "topic": "utmach/segundo/aire/01a16992/co2",
+        "qos": "0",
+        "retain": "true",
+        "broker": "air_bs",
+        "x": 590,
+        "y": 300,
+        "wires": [],
+        "info": "Publicar CO₂"
+    },
+    {
+        "id": "air_saveco2",
+        "type": "change",
+        "z": "air_sensor_26",
+        "name": "Guardar último CO₂",
+        "rules": [
+            {
+                "t": "set",
+                "p": "co2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 610,
+        "y": 360,
+        "wires": [
+            []
+        ],
+        "info": "Guardar último CO₂"
+    },
+    {
+        "id": "air_cspm25",
+        "type": "comment",
+        "z": "air_sensor_26",
+        "name": "PM2.5 · 30 s · utmach/segundo/aire/01a16992/pm25",
+        "info": "Inject fija el período. Random genera un entero dentro del rango. MQTT publica solo el número. Debug permite inspeccionar topic y payload.",
+        "x": 330,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "air_ipm25",
+        "type": "inject",
+        "z": "air_sensor_26",
+        "name": "PM2.5 cada 30 s",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "once": true,
+        "onceDelay": 3,
+        "topic": "utmach/segundo/aire/01a16992/pm25",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 500,
+        "wires": [
+            [
+                "air_rpm25"
+            ]
+        ],
+        "info": "PM2.5 cada 30 s"
+    },
+    {
+        "id": "air_rpm25",
+        "type": "random",
+        "z": "air_sensor_26",
+        "name": "PM2.5 0–250",
+        "low": "0",
+        "high": "250",
+        "inte": "true",
+        "property": "payload",
+        "x": 530,
+        "y": 500,
+        "wires": [
+            [
+                "air_opm25",
+                "air_tx",
+                "air_savepm25"
+            ]
+        ],
+        "info": "PM2.5 0–250"
+    },
+    {
+        "id": "air_opm25",
+        "type": "mqtt out",
+        "z": "air_sensor_26",
+        "name": "Publicar PM2.5",
+        "topic": "utmach/segundo/aire/01a16992/pm25",
+        "qos": "0",
+        "retain": "true",
+        "broker": "air_bs",
+        "x": 740,
+        "y": 500,
+        "wires": [],
+        "info": "Publicar PM2.5"
+    },
+    {
+        "id": "air_savepm25",
+        "type": "change",
+        "z": "air_sensor_26",
+        "name": "Guardar último PM2.5",
+        "rules": [
+            {
+                "t": "set",
+                "p": "pm25",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 720,
+        "y": 560,
+        "wires": [
+            []
+        ],
+        "info": "Guardar último PM2.5"
+    },
+    {
+        "id": "air_tx",
+        "type": "debug",
+        "z": "air_sensor_26",
+        "name": "TX MQTT · topic y payload",
+        "active": true,
+        "tosidebar": true,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1100,
+        "y": 160,
+        "wires": [],
+        "info": "TX MQTT · topic y payload"
+    },
+    {
+        "id": "air_cstate",
+        "type": "comment",
+        "z": "air_sensor_26",
+        "name": "ESTADO JSON · cada 60 s · alertas de simulación",
+        "info": "El estado utiliza las últimas lecturas. CO₂ > 1000 ppm o PM2.5 > 35 µg/m³ enciende ventilación. Son umbrales didácticos configurables. JSON serializa el objeto antes de MQTT.",
+        "x": 390,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "air_istate",
+        "type": "inject",
+        "z": "air_sensor_26",
+        "name": "Estado cada 60 s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "once": true,
+        "onceDelay": 5,
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 690,
+        "wires": [
+            [
+                "air_build"
+            ]
+        ],
+        "info": "Estado cada 60 s"
+    },
+    {
+        "id": "air_build",
+        "type": "change",
+        "z": "air_sensor_26",
+        "name": "Construir estado con últimas lecturas",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"sistema\":{\"nombre\":\"Monitoreo Ambiental Inteligente\",\"ubicacion\":\"Laboratorio IoT\",\"estado\":{\"ventilacion\": (($flowContext(\"co2\") > 1000) or ($flowContext(\"pm25\") > 35)) ? \"encendida\" : \"apagada\", \"alarmaCO2\": $flowContext(\"co2\") > 1000, \"alarmaPM25\": $flowContext(\"pm25\") > 35}}}",
+                "tot": "jsonata"
+            }
+        ],
+        "x": 440,
+        "y": 690,
+        "wires": [
+            [
+                "air_json"
+            ]
+        ],
+        "info": "Construir estado con últimas lecturas"
+    },
+    {
+        "id": "air_json",
+        "type": "json",
+        "z": "air_sensor_26",
+        "name": "Serializar JSON",
+        "property": "payload",
+        "action": "str",
+        "pretty": false,
+        "x": 700,
+        "y": 690,
+        "wires": [
+            [
+                "air_ostate",
+                "air_tx"
+            ]
+        ],
+        "info": "Serializar JSON"
+    },
+    {
+        "id": "air_ostate",
+        "type": "mqtt out",
+        "z": "air_sensor_26",
+        "name": "Publicar estado JSON",
+        "topic": "utmach/segundo/aire/01a16992/estado",
+        "qos": "1",
+        "retain": "true",
+        "broker": "air_bs",
+        "x": 940,
+        "y": 690,
+        "wires": [],
+        "info": "Publicar estado JSON"
+    },
+    {
+        "id": "air_inaqi",
+        "type": "mqtt in",
+        "z": "air_dash_26",
+        "name": "Recibir AQI",
+        "topic": "utmach/segundo/aire/01a16992/aqi",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "air_bd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 280,
+        "wires": [
+            [
+                "air_numaqi",
+                "air_rx"
+            ]
+        ],
+        "info": "Recibir AQI"
+    },
+    {
+        "id": "air_numaqi",
+        "type": "change",
+        "z": "air_dash_26",
+        "name": "Convertir AQI a número",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "air_gaqi",
+                "air_chartaqi",
+                "air_level"
+            ]
+        ],
+        "info": "Convertir AQI a número"
+    },
+    {
+        "id": "air_gaqi",
+        "type": "ui_gauge",
+        "z": "air_dash_26",
+        "name": "AQI recibido",
+        "group": "air_g",
+        "order": 1,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "AQI",
+        "label": "AQI",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 500,
+        "colors": [
+            "#43a047",
+            "#fbc02d",
+            "#e53935"
+        ],
+        "seg1": "50",
+        "seg2": "100",
+        "x": 660,
+        "y": 140,
+        "wires": [],
+        "info": "AQI recibido"
+    },
+    {
+        "id": "air_chartaqi",
+        "type": "ui_chart",
+        "z": "air_dash_26",
+        "name": "Histórico AQI",
+        "group": "air_g",
+        "order": 5,
+        "width": 4,
+        "height": 3,
+        "label": "AQI · AQI",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Esperando datos...",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "500",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff5722",
+            "#2196f3",
+            "#2ca02c",
+            "#d62728",
+            "#9467bd",
+            "#8c564b",
+            "#e377c2",
+            "#7f7f7f",
+            "#bcbd22"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 660,
+        "y": 195,
+        "wires": [
+            []
+        ],
+        "info": "Grafica solamente muestras recibidas por MQTT durante 30 minutos."
+    },
+    {
+        "id": "air_inco2",
+        "type": "mqtt in",
+        "z": "air_dash_26",
+        "name": "Recibir CO₂",
+        "topic": "utmach/segundo/aire/01a16992/co2",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "air_bd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 890,
+        "y": 180,
+        "wires": [
+            [
+                "air_numco2",
+                "air_rx"
+            ]
+        ],
+        "info": "Recibir CO₂"
+    },
+    {
+        "id": "air_numco2",
+        "type": "change",
+        "z": "air_dash_26",
+        "name": "Convertir CO₂ a número",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "x": 1190,
+        "y": 140,
+        "wires": [
+            [
+                "air_gco2",
+                "air_chartco2"
+            ]
+        ],
+        "info": "Convertir CO₂ a número"
+    },
+    {
+        "id": "air_gco2",
+        "type": "ui_gauge",
+        "z": "air_dash_26",
+        "name": "CO₂ recibido",
+        "group": "air_g",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "CO₂",
+        "label": "ppm",
+        "format": "{{value}}",
+        "min": 300,
+        "max": 2000,
+        "colors": [
+            "#43a047",
+            "#fbc02d",
+            "#e53935"
+        ],
+        "seg1": "1000",
+        "seg2": "1500",
+        "x": 1430,
+        "y": 160,
+        "wires": [],
+        "info": "CO₂ recibido"
+    },
+    {
+        "id": "air_chartco2",
+        "type": "ui_chart",
+        "z": "air_dash_26",
+        "name": "Histórico CO₂",
+        "group": "air_g",
+        "order": 6,
+        "width": 4,
+        "height": 3,
+        "label": "CO₂ · ppm",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Esperando datos...",
+        "dot": true,
+        "ymin": "300",
+        "ymax": "2000",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff5722",
+            "#2196f3",
+            "#2ca02c",
+            "#d62728",
+            "#9467bd",
+            "#8c564b",
+            "#e377c2",
+            "#7f7f7f",
+            "#bcbd22"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1400,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "info": "Grafica solamente muestras recibidas por MQTT durante 30 minutos."
+    },
+    {
+        "id": "air_inpm25",
+        "type": "mqtt in",
+        "z": "air_dash_26",
+        "name": "Recibir PM2.5",
+        "topic": "utmach/segundo/aire/01a16992/pm25",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "air_bd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 340,
+        "wires": [
+            [
+                "air_numpm25",
+                "air_rx"
+            ]
+        ],
+        "info": "Recibir PM2.5"
+    },
+    {
+        "id": "air_numpm25",
+        "type": "change",
+        "z": "air_dash_26",
+        "name": "Convertir PM2.5 a número",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "x": 400,
+        "y": 440,
+        "wires": [
+            [
+                "air_gpm25",
+                "air_chartpm25"
+            ]
+        ],
+        "info": "Convertir PM2.5 a número"
+    },
+    {
+        "id": "air_gpm25",
+        "type": "ui_gauge",
+        "z": "air_dash_26",
+        "name": "PM2.5 recibido",
+        "group": "air_g",
+        "order": 3,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "PM2.5",
+        "label": "µg/m³",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 250,
+        "colors": [
+            "#43a047",
+            "#fbc02d",
+            "#e53935"
+        ],
+        "seg1": "35",
+        "seg2": "75",
+        "x": 640,
+        "y": 440,
+        "wires": [],
+        "info": "PM2.5 recibido"
+    },
+    {
+        "id": "air_chartpm25",
+        "type": "ui_chart",
+        "z": "air_dash_26",
+        "name": "Histórico PM2.5",
+        "group": "air_g",
+        "order": 7,
+        "width": 4,
+        "height": 3,
+        "label": "PM2.5 · µg/m³",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Esperando datos...",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "250",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff5722",
+            "#2196f3",
+            "#2ca02c",
+            "#d62728",
+            "#9467bd",
+            "#8c564b",
+            "#e377c2",
+            "#7f7f7f",
+            "#bcbd22"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 500,
+        "wires": [
+            []
+        ],
+        "info": "Grafica solamente muestras recibidas por MQTT durante 30 minutos."
+    },
+    {
+        "id": "air_rx",
+        "type": "debug",
+        "z": "air_dash_26",
+        "name": "RX MQTT · topic y payload",
+        "active": true,
+        "tosidebar": true,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1100,
+        "y": 320,
+        "wires": [],
+        "info": "RX MQTT · topic y payload"
+    },
+    {
+        "id": "air_level",
+        "type": "change",
+        "z": "air_dash_26",
+        "name": "Clasificar AQI",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload <= 50 ? \"🟢 Bueno\" : payload <= 100 ? \"🟡 Moderado\" : payload <= 150 ? \"🟠 Dañino para sensibles\" : payload <= 200 ? \"🔴 Dañino\" : payload <= 300 ? \"🟣 Muy dañino\" : \"🟤 Peligroso\"",
+                "tot": "jsonata"
+            }
+        ],
+        "x": 650,
+        "y": 60,
+        "wires": [
+            [
+                "air_leveltext"
+            ]
+        ],
+        "info": "Clasificar AQI"
+    },
+    {
+        "id": "air_leveltext",
+        "type": "ui_text",
+        "z": "air_dash_26",
+        "group": "air_e",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Nivel AQI",
+        "label": "Nivel AQI",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 840,
+        "y": 60,
+        "wires": [],
+        "info": "Nivel AQI"
+    },
+    {
+        "id": "air_instate",
+        "type": "mqtt in",
+        "z": "air_dash_26",
+        "name": "Recibir estado JSON",
+        "topic": "utmach/segundo/aire/01a16992/estado",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "air_bd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 860,
+        "y": 440,
+        "wires": [
+            [
+                "air_parse",
+                "air_rx"
+            ]
+        ],
+        "info": "Recibir estado JSON"
+    },
+    {
+        "id": "air_parse",
+        "type": "json",
+        "z": "air_dash_26",
+        "name": "Convertir JSON a objeto",
+        "property": "payload",
+        "action": "obj",
+        "x": 1110,
+        "y": 520,
+        "wires": [
+            [
+                "air_name",
+                "air_place",
+                "air_vent",
+                "air_coalarm",
+                "air_pmalarm"
+            ]
+        ],
+        "info": "Convertir JSON a objeto"
+    },
+    {
+        "id": "air_name",
+        "type": "ui_text",
+        "z": "air_dash_26",
+        "group": "air_e",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Sistema",
+        "label": "Sistema",
+        "format": "{{msg.payload.sistema.nombre}}",
+        "layout": "row-spread",
+        "x": 1400,
+        "y": 460,
+        "wires": [],
+        "info": "Sistema"
+    },
+    {
+        "id": "air_place",
+        "type": "ui_text",
+        "z": "air_dash_26",
+        "group": "air_e",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "Ubicación",
+        "label": "Ubicación",
+        "format": "{{msg.payload.sistema.ubicacion}}",
+        "layout": "row-spread",
+        "x": 1400,
+        "y": 510,
+        "wires": [],
+        "info": "Ubicación"
+    },
+    {
+        "id": "air_vent",
+        "type": "ui_text",
+        "z": "air_dash_26",
+        "group": "air_e",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "Ventilación",
+        "label": "Ventilación",
+        "format": "{{msg.payload.sistema.estado.ventilacion}}",
+        "layout": "row-spread",
+        "x": 1400,
+        "y": 560,
+        "wires": [],
+        "info": "Ventilación"
+    },
+    {
+        "id": "air_coalarm",
+        "type": "ui_text",
+        "z": "air_dash_26",
+        "group": "air_e",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "name": "Alarma CO₂",
+        "label": "Alarma CO₂",
+        "format": "{{msg.payload.sistema.estado.alarmaCO2 ? \"🔴 ACTIVA\" : \"🟢 Inactiva\"}}",
+        "layout": "row-spread",
+        "x": 1400,
+        "y": 610,
+        "wires": [],
+        "info": "Alarma CO₂"
+    },
+    {
+        "id": "air_pmalarm",
+        "type": "ui_text",
+        "z": "air_dash_26",
+        "group": "air_e",
+        "order": 6,
+        "width": 6,
+        "height": 1,
+        "name": "Alarma PM2.5",
+        "label": "Alarma PM2.5",
+        "format": "{{msg.payload.sistema.estado.alarmaPM25 ? \"🔴 ACTIVA\" : \"🟢 Inactiva\"}}",
+        "layout": "row-spread",
+        "x": 1400,
+        "y": 660,
+        "wires": [],
+        "info": "Alarma PM2.5"
+    },
+    {
+        "id": "air_cd",
+        "type": "comment",
+        "z": "air_dash_26",
+        "name": "MQTT → conversión → gauges / gráficos / estado",
+        "info": "No hay cables entre las dos pestañas. Dos conexiones con identificadores distintos intercambian datos a través del mismo bróker. Los números se convierten con Change y el estado se interpreta con JSON.",
+        "x": 380,
+        "y": 25,
+        "wires": []
+    },
+    {
+        "id": "camila_bt",
+        "type": "ui_button",
+        "z": "camila_cliente",
+        "name": "Consultar temperatura",
+        "group": "camila_group",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Consultar temperatura",
+        "tooltip": "Solicita una nueva temperatura al servidor",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "thermometer-half",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "camila_ht"
+            ]
+        ]
+    },
+    {
+        "id": "camila_bc",
+        "type": "ui_button",
+        "z": "camila_cliente",
+        "name": "Consultar ciudad y país",
+        "group": "camila_group",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Consultar ciudad y país",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "globe",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "camila_hc"
+            ]
+        ]
+    },
+    {
+        "id": "camila_ht",
+        "type": "http request",
+        "z": "camila_cliente",
+        "name": "GET temperatura",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:1880/API/6toB/Camila?dato=temperatura",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "camila_extract"
+            ]
+        ]
+    },
+    {
+        "id": "camila_extract",
+        "type": "function",
+        "z": "camila_cliente",
+        "name": "Leer temperatura",
+        "func": "if (msg.statusCode !== 200) { node.error(\"Error HTTP: \" + msg.statusCode, msg); return null; }\nmsg.payload = msg.payload.temperatura;\nreturn msg;",
+        "outputs": 1,
+        "x": 650,
+        "y": 140,
+        "wires": [
+            [
+                "camila_d1",
+                "camila_txt1"
+            ]
+        ]
+    },
+    {
+        "id": "camila_hc",
+        "type": "http request",
+        "z": "camila_cliente",
+        "name": "GET ciudad y país",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:1880/API/6toB/Camila?dato=ubicacion",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 300,
+        "wires": [
+            [
+                "camila_d2",
+                "camila_txt2"
+            ]
+        ]
+    },
+    {
+        "id": "camila_d1",
+        "type": "debug",
+        "z": "camila_cliente",
+        "name": "debug1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 880,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "camila_d2",
+        "type": "debug",
+        "z": "camila_cliente",
+        "name": "debug2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 650,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "camila_txt1",
+        "type": "ui_text",
+        "z": "camila_cliente",
+        "group": "camila_group",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "Temperatura recibida",
+        "label": "Temperatura",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-spread",
+        "x": 900,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "camila_txt2",
+        "type": "ui_text",
+        "z": "camila_cliente",
+        "group": "camila_group",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "name": "Ciudad y país recibidos",
+        "label": "Ubicación",
+        "format": "{{msg.payload.ciudad}}, {{msg.payload.pais}}",
+        "layout": "row-spread",
+        "x": 700,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "camila_form",
+        "type": "ui_form",
+        "z": "camila_cliente",
+        "name": "Ingresar ciudad y país",
+        "label": "Nueva ubicación",
+        "group": "camila_edit_group",
+        "order": 1,
+        "width": 6,
+        "height": 0,
+        "options": [
+            {
+                "label": "Ciudad",
+                "value": "ciudad",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "País",
+                "value": "pais",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "ciudad": "",
+            "pais": ""
+        },
+        "payload": "",
+        "submit": "Guardar ubicación",
+        "cancel": "",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 180,
+        "y": 480,
+        "wires": [
+            [
+                "camila_post_client"
+            ]
+        ]
+    },
+    {
+        "id": "camila_post_client",
+        "type": "http request",
+        "z": "camila_cliente",
+        "name": "POST guardar ubicación",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://127.0.0.1:1880/API/6toB/Camila",
+        "persist": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "Content-Type",
+                "valueType": "other",
+                "valueValue": "application/json"
+            }
+        ],
+        "x": 460,
+        "y": 480,
+        "wires": [
+            [
+                "camila_saved"
+            ]
+        ]
+    },
+    {
+        "id": "camila_saved",
+        "type": "ui_text",
+        "z": "camila_cliente",
+        "group": "camila_edit_group",
+        "order": 2,
+        "width": 6,
+        "height": 2,
+        "name": "Resultado del guardado",
+        "label": "Estado",
+        "format": "{{msg.payload.mensaje || msg.payload.error}}",
+        "layout": "col-center",
+        "x": 760,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "camila_in",
+        "type": "http in",
+        "z": "camila_servidor",
+        "name": "GET /API/6toB/Camila",
+        "url": "/API/6toB/Camila",
+        "method": "get",
+        "upload": false,
+        "x": 180,
+        "y": 180,
+        "wires": [
+            [
+                "camila_fn"
+            ]
+        ]
+    },
+    {
+        "id": "camila_fn",
+        "type": "function",
+        "z": "camila_servidor",
+        "name": "Temperatura dinámica o ubicación",
+        "func": "const dato = msg.req.query.dato;\nmsg.headers = {\"Content-Type\":\"application/json\"};\nmsg.statusCode = 200;\nif (dato === \"temperatura\") {\n let t; do { t = Math.round((18+Math.random()*17)*10)/10; } while(t === context.get(\"anterior\"));\n context.set(\"anterior\", t); msg.payload = {temperatura:t, unidad:\"°C\"};\n} else if(dato === \"ubicacion\") { msg.payload = flow.get(\"camila_ubicacion\") || {ciudad:\"Machala\",pais:\"Ecuador\"};\n} else { msg.statusCode=400; msg.payload={error:\"Use dato=temperatura o dato=ubicacion\"}; }\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 180,
+        "wires": [
+            [
+                "camila_out"
+            ]
+        ]
+    },
+    {
+        "id": "camila_out",
+        "type": "http response",
+        "z": "camila_servidor",
+        "name": "Responder JSON",
+        "statusCode": "",
+        "headers": {},
+        "x": 800,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "camila_post_in",
+        "type": "http in",
+        "z": "camila_servidor",
+        "name": "POST /API/6toB/Camila",
+        "url": "/API/6toB/Camila",
+        "method": "post",
+        "upload": false,
+        "x": 180,
+        "y": 360,
+        "wires": [
+            [
+                "camila_save_fn"
+            ]
+        ]
+    },
+    {
+        "id": "camila_save_fn",
+        "type": "function",
+        "z": "camila_servidor",
+        "name": "Validar y guardar ubicación",
+        "func": "const p = msg.payload || {};\nmsg.headers = {\"Content-Type\":\"application/json\"};\nconst ciudad = typeof p.ciudad === \"string\" ? p.ciudad.trim() : \"\";\nconst pais = typeof p.pais === \"string\" ? p.pais.trim() : \"\";\nif (!ciudad || !pais || ciudad.length > 80 || pais.length > 80) {\n msg.statusCode=400; msg.payload={error:\"Ingrese ciudad y país (máximo 80 caracteres).\"};\n} else {\n flow.set(\"camila_ubicacion\", {ciudad,pais});\n msg.statusCode=200; msg.payload={ciudad,pais,mensaje:\"Ubicación guardada: \" + ciudad + \", \" + pais + \". Pulse Consultar ciudad y país.\"};\n}\nreturn msg;",
+        "outputs": 1,
+        "x": 490,
+        "y": 360,
+        "wires": [
+            [
+                "camila_save_response"
+            ]
+        ]
+    },
+    {
+        "id": "camila_save_response",
+        "type": "http response",
+        "z": "camila_servidor",
+        "name": "Confirmar guardado",
+        "statusCode": "",
+        "headers": {},
+        "x": 790,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "fe1564b8e161c884",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "6758f55270f2a5f9",
+        "name": "Inicio",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Consolidado de laboratorios\n\n**12 prácticas · Node-RED · MQTT y REST**\n\nAbre un laboratorio desde el índice o usa el menú ☰ para navegar entre las fichas.\n\n---\n\n## 01 · Fundamentos de Node-RED\n\n### 1. [Hola Mundo](./laboratorio-01)\n\nIntroduce el envío de mensajes y la inspección de objetos JSON. El flujo usa nodos Change y Debug para observar la temperatura, la humedad y el nombre por separado.\n\n### 2. [Clase 4 · Ejercicio 1](./laboratorio-02)\n\nGenera un valor aleatorio entre 0 y 40. Las funciones calculan la temperatura y la humedad y generan alarmas cuando superan 50 y 90, respectivamente.\n\n### 3. [Clase 4 · Ejercicio 2](./laboratorio-03)\n\nCalcula temperatura y humedad con dos decimales. Los nodos Switch detectan los umbrales y los nodos Change preparan el texto de las alarmas.\n\n### 4. [Clase 4 · Ejercicio 3](./laboratorio-04)\n\nInyecta un JSON con temperatura, humedad y nombre. Los nodos Change separan sus campos y agregan ciudad y tema en la rama de temperatura.\n\n---\n\n## 02 · Servicios HTTP\n\n### 5. [Servidor REST](./laboratorio-05)\n\nRecibe solicitudes HTTP, extrae temperatura y humedad, responde al cliente y actualiza los indicadores del Dashboard.\n\n---\n\n## 03 · Integración MQTT\n\n### 6. [Puente Mosquitto a HiveMQ](./laboratorio-06)\n\nRecibe mensajes de Mosquitto local, los muestra en Debug y los publica en HiveMQ Cloud.\n\n### 7. [Orquestador MQTT](./laboratorio-07)\n\nConecta Mosquitto local y HiveMQ Cloud mediante ramas de subida y bajada. Los nodos MQTT reciben y reenvían mensajes entre el equipo y el celular.\n\n### 8. [Flujo 5 · Dashboard MQTT](./laboratorio-08)\n\nEnvía temperatura y humedad al panel del celular mediante MQTT. También recibe datos para los indicadores y gráficos y permite intercambiar mensajes desde el dashboard.\n\n---\n\n## 04 · Calidad del aire\n\n### 9. [Aire · Cliente sensor](./laboratorio-09)\n\nSimula AQI, CO₂ y PM2.5 en intervalos de 60, 120 y 30 segundos. Publica las lecturas por MQTT y envía un JSON de estado con alertas de simulación.\n\n### 10. [Aire · Cliente dashboard](./laboratorio-10)\n\nSuscribe las lecturas MQTT de calidad del aire, las convierte a números y las presenta en indicadores e históricos. También muestra el nivel AQI y los campos del JSON de estado.\n\n---\n\n## 05 · Cliente y servidor REST\n\n### 11. [Camila · Cliente REST](./laboratorio-11)\n\nConsulta temperatura y ubicación mediante GET. Un formulario envía ciudad y país mediante POST y muestra el resultado del guardado.\n\n### 12. [Camila · Servidor REST](./laboratorio-12)\n\nExpone GET y POST en /API/6toB/Camila. Las funciones devuelven temperatura o ubicación, validan los datos enviados y guardan la ubicación.",
+        "className": "",
+        "x": 240,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d49515aaf2cffe37",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "ad65a11d67b430f4",
+        "name": "Hola Mundo",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Hola Mundo\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/dfb14b698d70febb)\n\n## Qué hace\n\nIntroduce el envío de mensajes y la inspección de objetos JSON. El flujo usa nodos Change y Debug para observar la temperatura, la humedad y el nombre por separado.\n\n## Nodos del flujo\n\n- `inject` × 2\n- `debug` × 4\n- `random` × 1\n- `function` × 1\n- `change` × 3\n\n## Código original\n\n### function 1\n\n````javascript\nif (msg.payload > 50) {\nmsg.payload = \"Alarma mayor a 50\";\n} else {\nmsg = null;\n}\nreturn msg;\n````",
+        "className": "",
+        "x": 240,
+        "y": 135,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e8bd981853d2478",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "5df96c51435223ca",
+        "name": "Clase 4 · Ejercicio 1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Clase 4 · Ejercicio 1\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/t_ej1)\n\n## Qué hace\n\nGenera un valor aleatorio entre 0 y 40. Las funciones calculan la temperatura y la humedad y generan alarmas cuando superan 50 y 90, respectivamente.\n\n## Nodos del flujo\n\n- `inject` × 1\n- `random` × 1\n- `debug` × 5\n- `function` × 4\n\n## Código original\n\n### Temperatura (x10)\n\n````javascript\nvar randomValue = msg.payload;\nmsg.payload = (randomValue * 10);\nreturn msg;\n````\n\n### Alarma temp > 50\n\n````javascript\nif (msg.payload > 50) {\n  msg.payload = \"Alarma mayor a 50\";\n} else {\n  msg = null;\n}\nreturn msg;\n````\n\n### Humedad (x3 + 2.5)\n\n````javascript\nvar randomValue = msg.payload;\nmsg.payload = ((randomValue * 3) + 2.5);\nreturn msg;\n````\n\n### Alarma hum > 90\n\n````javascript\nif (msg.payload > 90) {\n  msg.payload = \"Alarma mayor a 90\";\n} else {\n  msg = null;\n}\nreturn msg;\n````",
+        "className": "",
+        "x": 240,
+        "y": 190,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fd2c6e3a6c813fe0",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "51e3e84797efb57f",
+        "name": "Clase 4 · Ejercicio 2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Clase 4 · Ejercicio 2\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/t_ej2)\n\n## Qué hace\n\nCalcula temperatura y humedad con dos decimales. Los nodos Switch detectan los umbrales y los nodos Change preparan el texto de las alarmas.\n\n## Nodos del flujo\n\n- `inject` × 1\n- `random` × 1\n- `function` × 2\n- `debug` × 4\n- `switch` × 2\n- `change` × 2\n\n## Código original\n\n### Temperatura (x10, 2 dec)\n\n````javascript\nvar randomValue = msg.payload;\nmsg.payload = (randomValue * 10).toFixed(2);\nreturn msg;\n````\n\n### Humedad (x3+2.5, 2 dec)\n\n````javascript\nvar randomValue = msg.payload;\nmsg.payload = ((randomValue * 3) + 2.5).toFixed(2);\nreturn msg;\n````",
+        "className": "",
+        "x": 240,
+        "y": 245,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58c93d248e57d3be",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "c1e107a6f0e8072e",
+        "name": "Clase 4 · Ejercicio 3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Clase 4 · Ejercicio 3\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/t_ej3)\n\n## Qué hace\n\nInyecta un JSON con temperatura, humedad y nombre. Los nodos Change separan sus campos y agregan ciudad y tema en la rama de temperatura.\n\n## Nodos del flujo\n\n- `inject` × 1\n- `debug` × 5\n- `change` × 4",
+        "className": "",
+        "x": 240,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "056cee822bf4b19b",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "1b34804151613d11",
+        "name": "Servidor REST",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "content": "# Servidor REST\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/rest1880tabserver01)\n\n## Qué hace\n\nRecibe solicitudes HTTP, extrae temperatura y humedad, responde al cliente y actualiza los indicadores del Dashboard.\n\n## Nodos del flujo\n\n- `http in` × 2\n- `function` × 1\n- `debug` × 1\n- `template` × 1\n- `http response` × 1\n- `change` × 2\n- `ui-gauge` × 2\n\n## Código original\n\n### extrae temp y hum\n\n````javascript\nconst params = (msg.req && msg.req.params) || {};\nif (params.temp !== undefined && params.hum !== undefined) {\n    const temp = Number(params.temp);\n    const hum = Number(params.hum);\n    if (!Number.isNaN(temp)) { flow.set('lastTemp', temp); }\n    if (!Number.isNaN(hum)) { flow.set('lastHum', hum); }\n    flow.set('lastAt', new Date().toLocaleTimeString());\n}\nconst temp = Number(flow.get('lastTemp'));\nconst hum = Number(flow.get('lastHum'));\nconst ARC = 251.2; // half circumference for r=80\nmsg.temp = Number.isNaN(temp) ? '--' : temp;\nmsg.hum = Number.isNaN(hum) ? '--' : hum;\nmsg.lastAt = flow.get('lastAt') || 'esperando datos...';\nmsg.tempBar = Number.isNaN(temp) ? 0 : Math.max(0, Math.min(100, temp * 2));\nmsg.humBar = Number.isNaN(hum) ? 0 : Math.max(0, Math.min(100, hum));\nmsg.tempArc = Number.isNaN(temp) ? 0 : +(ARC * Math.max(0, Math.min(1, temp / 50))).toFixed(1);\nmsg.humArc = Number.isNaN(hum) ? 0 : +(ARC * Math.max(0, Math.min(1, hum / 100))).toFixed(1);\nmsg.payload = { temp: msg.temp, hum: msg.hum };\nreturn msg;\n````",
+        "className": "",
+        "x": 240,
+        "y": 355,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "00ad0b4f7d41b5ad",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "7b64562e55ca5dbf",
+        "name": "Puente Mosquitto a HiveMQ",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Puente Mosquitto a HiveMQ\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/flow_puente_mqtt)\n\n## Qué hace\n\nRecibe mensajes de Mosquitto local, los muestra en Debug y los publica en HiveMQ Cloud.\n\n## Nodos del flujo\n\n- `mqtt in` × 1\n- `debug` × 1\n- `mqtt out` × 1",
+        "className": "",
+        "x": 240,
+        "y": 410,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdaa82757103f0d0",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "9c89a5b894c8c4da",
+        "name": "Orquestador MQTT",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Orquestador MQTT\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/1377b1a4bf471aa6)\n\n## Qué hace\n\nConecta Mosquitto local y HiveMQ Cloud mediante ramas de subida y bajada. Los nodos MQTT reciben y reenvían mensajes entre el equipo y el celular.\n\n## Nodos del flujo\n\n- `mqtt in` × 2\n- `debug` × 1\n- `mqtt out` × 2",
+        "className": "",
+        "x": 240,
+        "y": 465,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c09b0744a8f278e2",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "167792f768a2016d",
+        "name": "CLASE CONJUNTA - Dashboard MQTT",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "content": "# Flujo 5 · Dashboard MQTT\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/b9ae83c5d00795a4)\n\n## Qué hace\n\nEnvía temperatura y humedad al panel del celular mediante MQTT. También recibe datos para los indicadores y gráficos y permite intercambiar mensajes desde el dashboard.\n\n## Nodos del flujo\n\n- `inject` × 4\n- `debug` × 8\n- `function` × 5\n- `change` × 4\n- `switch` × 1\n- `random` × 1\n- `ui_text` × 3\n- `mqtt out` × 3\n- `mqtt in` × 3\n- `ui_gauge` × 2\n- `ui_chart` × 3\n- `ui_text_input` × 1\n\n## Código original\n\n### function 1\n\n````javascript\nvar randomValue = msg.payload;\nmsg.payload = (randomValue * 10);\nreturn msg;\n````\n\n### JSON tem + hum\n\n````javascript\nconst tem = Number((20 + Math.random() * 15).toFixed(1));\nconst hum = Number((45 + Math.random() * 45).toFixed(1));\nconst payload = JSON.stringify({ tem, hum });\nreturn [{ payload }, { payload }];\n````\n\n### Separar tem y hum\n\n````javascript\nlet data = msg.payload;\nif (typeof data === 'string') { try { data = JSON.parse(data); } catch(e) { return null; } }\nconst tem = Number(data.tem);\nconst hum = Number(data.hum);\nif (!Number.isFinite(tem) || !Number.isFinite(hum)) return null;\nreturn [\n {payload:tem},\n {payload:hum},\n [{payload:tem,topic:'Temperatura'},{payload:hum,topic:'Humedad'}]\n];\n````\n\n### Validar mensaje\n\n````javascript\nconst texto = String(msg.payload ?? '').trim();\nif (!texto) return null;\nmsg.payload = texto;\nmsg.topic = 'FIC/6B/Abi/mensaje';\nreturn msg;\n````\n\n### Datos independientes para charts\n\n````javascript\nconst tem = Number((20 + Math.random()*15).toFixed(1));\nconst hum = Number((45 + Math.random()*45).toFixed(1));\nreturn [[{topic:'Temperatura',payload:tem},{topic:'Humedad',payload:hum}],[{topic:'Temperatura',payload:tem},{topic:'Humedad',payload:hum}]];\n````",
+        "className": "",
+        "x": 280,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b5e84d57f469515b",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "ff1714e5cdae7a22",
+        "name": "LECCION - Aire · Cliente sensor",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Aire · Cliente sensor\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/air_sensor_26)\n\n## Qué hace\n\nSimula AQI, CO₂ y PM2.5 en intervalos de 60, 120 y 30 segundos. Publica las lecturas por MQTT y envía un JSON de estado con alertas de simulación.\n\n## Nodos del flujo\n\n- `inject` × 4\n- `random` × 3\n- `mqtt out` × 4\n- `change` × 3\n- `debug` × 1\n- `json` × 1",
+        "className": "",
+        "x": 270,
+        "y": 575,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7adfcbed93e65a56",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "c5f194a8c18f260e",
+        "name": "LECCION - Aire · Cliente dashboard",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "content": "# Aire · Cliente dashboard\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/air_dash_26)\n\n## Qué hace\n\nSuscribe las lecturas MQTT de calidad del aire, las convierte a números y las presenta en indicadores e históricos. También muestra el nivel AQI y los campos del JSON de estado.\n\n## Nodos del flujo\n\n- `mqtt in` × 4\n- `change` × 4\n- `ui_gauge` × 3\n- `ui_chart` × 3\n- `debug` × 1\n- `ui_text` × 6\n- `json` × 1",
+        "className": "",
+        "x": 280,
+        "y": 630,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30d9c6bc0d381671",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "11a3c93e11b795d5",
+        "name": "EXAMEN· Cliente REST",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Camila · Cliente REST\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/camila_cliente)\n\n## Qué hace\n\nConsulta temperatura y ubicación mediante GET. Un formulario envía ciudad y país mediante POST y muestra el resultado del guardado.\n\n## Nodos del flujo\n\n- `ui_button` × 2\n- `http request` × 3\n- `function` × 1\n- `debug` × 2\n- `ui_text` × 3\n- `ui_form` × 1\n\n## Código original\n\n### Leer temperatura\n\n````javascript\nif (msg.statusCode !== 200) { node.error(\"Error HTTP: \" + msg.statusCode, msg); return null; }\nmsg.payload = msg.payload.temperatura;\nreturn msg;\n````",
+        "className": "",
+        "x": 250,
+        "y": 685,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b4b036d638f8b5d",
+        "type": "ui-markdown",
+        "z": "cb2a26858fe8434c",
+        "group": "5ee465a5b288431d",
+        "name": "EXAMEN · Servidor REST",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "content": "# Camila · Servidor REST\n\n[Vuelve al inicio](./inicio) · [Abre el flujo original en Node-RED](/#flow/camila_servidor)\n\n## Qué hace\n\nExpone GET y POST en /API/6toB/Camila. Las funciones devuelven temperatura o ubicación, validan los datos enviados y guardan la ubicación.\n\n## Nodos del flujo\n\n- `http in` × 2\n- `function` × 2\n- `http response` × 2\n\n## Código original\n\n### Temperatura dinámica o ubicación\n\n````javascript\nconst dato = msg.req.query.dato;\nmsg.headers = {\"Content-Type\":\"application/json\"};\nmsg.statusCode = 200;\nif (dato === \"temperatura\") {\n let t; do { t = Math.round((18+Math.random()*17)*10)/10; } while(t === context.get(\"anterior\"));\n context.set(\"anterior\", t); msg.payload = {temperatura:t, unidad:\"°C\"};\n} else if(dato === \"ubicacion\") { msg.payload = flow.get(\"camila_ubicacion\") || {ciudad:\"Machala\",pais:\"Ecuador\"};\n} else { msg.statusCode=400; msg.payload={error:\"Use dato=temperatura o dato=ubicacion\"}; }\nreturn msg;\n````\n\n### Validar y guardar ubicación\n\n````javascript\nconst p = msg.payload || {};\nmsg.headers = {\"Content-Type\":\"application/json\"};\nconst ciudad = typeof p.ciudad === \"string\" ? p.ciudad.trim() : \"\";\nconst pais = typeof p.pais === \"string\" ? p.pais.trim() : \"\";\nif (!ciudad || !pais || ciudad.length > 80 || pais.length > 80) {\n msg.statusCode=400; msg.payload={error:\"Ingrese ciudad y país (máximo 80 caracteres).\"};\n} else {\n flow.set(\"camila_ubicacion\", {ciudad,pais});\n msg.statusCode=200; msg.payload={ciudad,pais,mensaje:\"Ubicación guardada: \" + ciudad + \", \" + pais + \". Pulse Consultar ciudad y país.\"};\n}\nreturn msg;\n````",
+        "className": "",
+        "x": 250,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da5b0a0000000008",
+        "type": "ui-template",
+        "z": "cb2a26858fe8434c",
+        "group": "167792f768a2016d",
+        "page": "",
+        "ui": "",
+        "name": "Panel original · Temperatura, humedad y mensajería MQTT",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<template><iframe src=\"/ui/#!/1\" title=\"Temperatura, humedad y mensajería MQTT\" style=\"display:block;width:100%;height:72vh;border:1px solid #ddd;border-radius:8px\"></iframe></template>",
+        "storeOutMessages": false,
+        "passthru": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 620,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da5b0a0000000010",
+        "type": "ui-template",
+        "z": "cb2a26858fe8434c",
+        "group": "c5f194a8c18f260e",
+        "page": "",
+        "ui": "",
+        "name": "Panel original · Calidad del Aire",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<template><iframe src=\"/ui/#!/2\" title=\"Calidad del Aire\" style=\"display:block;width:100%;height:72vh;border:1px solid #ddd;border-radius:8px\"></iframe></template>",
+        "storeOutMessages": false,
+        "passthru": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 530,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da5b0a0000000011",
+        "type": "ui-template",
+        "z": "cb2a26858fe8434c",
+        "group": "11a3c93e11b795d5",
+        "page": "",
+        "ui": "",
+        "name": "Panel original · API REST Camila",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<template><iframe src=\"/ui/#!/0\" title=\"API REST Camila\" style=\"display:block;width:100%;height:72vh;border:1px solid #ddd;border-radius:8px\"></iframe></template>",
+        "storeOutMessages": false,
+        "passthru": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 540,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da5b0a0000000005",
+        "type": "ui-template",
+        "z": "cb2a26858fe8434c",
+        "group": "1b34804151613d11",
+        "page": "",
+        "ui": "",
+        "name": "Panel original · Servidor REST",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<template><iframe src=\"/sensores\" title=\"Servidor REST\" style=\"width:100%;height:72vh;border:0\"></iframe></template>",
+        "storeOutMessages": false,
+        "passthru": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 530,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    }
+]
